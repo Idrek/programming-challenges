@@ -1,6 +1,6 @@
 (defproject the-3n-plus-one "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Ateneo :: The 3n + 1 problem"
+  :url "https://github.com/Idrek/programming-challenges"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]]
