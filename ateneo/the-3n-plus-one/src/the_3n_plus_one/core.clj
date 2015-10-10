@@ -3,7 +3,7 @@
             [clojure.string :as s])
   (:gen-class))
 
-(defn- cycle-length
+(defn cycle-length
   "Calculate the cycle-length of a number:
     - If number is odd, cycle with result of (3n+1)
     - If number is even, cycle with result of (n/2)
