@@ -3,20 +3,20 @@
             [clojure.string :as s])
   (:gen-class))
 
-(defn- format-number
+(defn format-number
   [number]
   (format "%04d" number))
 
-(defn- is-repdigit
+(defn is-repdigit
   "Check if all digits of a number are the same"
   [number]
   (= (count (into #{} (format-number number))) 1))
 
-(defn- is-kaprekar-constant
+(defn is-kaprekar-constant
   [number]
   (= number 6174))
 
-(defn- numbers-with-digits-ordered
+(defn numbers-with-digits-ordered
   "From one number as input it returns a list with two numbers, the first
   one with its digits ordered in descendant and the second one with its
   digits ordered in ascendant"
@@ -27,7 +27,7 @@
           (map (comp #(Integer/parseInt %) (partial s/join "")) (list list-digits-desc list-digits-asc))]
     nums-with-digits-ordered))
 
-(defn- kaprekar-iterations
+(defn kaprekar-iterations
   "Return the number of iterations needed to apply to input number to get the Kraprekar constant"
   [number]
   (loop [[number-digits-desc number-digits-asc] (numbers-with-digits-ordered number)
