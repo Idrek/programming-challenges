@@ -6,6 +6,7 @@
   (.charAt (str character) 0))
 
 (defn unusual-sort
+  "http://www.codewars.com/kata/un-usual-sort"
   [& chars]
   (let [sub-ascii (zipmap (map char (flatten (list (range 65 91) (range 97 123) (range 48 58)))) (range))]
     (sort
