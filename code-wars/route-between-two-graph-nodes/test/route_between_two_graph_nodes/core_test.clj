@@ -5,7 +5,7 @@
 (deftest test-route-between-two-graph-nodes
   (testing "find-route-between-two-graph-nodes"
     (are [origin-node destination-node]
-      (= "Found a route!!" (find-route-between-two-graph-nodes {5 #{11}
+      (= true (find-route-between-two-graph-nodes {5 #{11}
                                                                 7 #{8 11}
                                                                 3 #{8 10}
                                                                 11 #{2 9 10}
@@ -29,7 +29,7 @@
       11 10
       8 9)
     (are [origin-node destination-node]
-      (= "No route" (find-route-between-two-graph-nodes {5 #{11}
+      (= false (find-route-between-two-graph-nodes {5 #{11}
                                                          7 #{8 11}
                                                          3 #{8 10}
                                                          11 #{2 9 10}
