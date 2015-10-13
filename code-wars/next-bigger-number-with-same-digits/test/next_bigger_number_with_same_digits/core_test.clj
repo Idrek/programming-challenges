@@ -6,7 +6,7 @@
 
   (testing "different-numbers-with-same-digits"
     (is (= '(1) (different-numbers-with-same-digits 1)))
-    (is (= '(1) (different-numbers-with-same-digits 0001)))
+    (is (= '(1) (different-numbers-with-same-digits 0001))) ;; Octal
     (is (= '(11) (different-numbers-with-same-digits 11)))
     (is (= '(9) (different-numbers-with-same-digits 011))) ;; Octal
     (is (= '(111) (different-numbers-with-same-digits 111)))
