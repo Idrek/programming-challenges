@@ -17,6 +17,7 @@
   (reduce merge (flatten (for [[k v] data-letter-holes] (map #(hash-map % v) k)))))
 
 (defn get-number-of-holes
+  "Count by letter the number of holes of the whole word"
   [letter-holes word]
   (reduce + (map #(get letter-holes %) word)))
 
