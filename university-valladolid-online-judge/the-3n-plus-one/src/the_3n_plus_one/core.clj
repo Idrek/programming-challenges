@@ -17,7 +17,6 @@
       (recur (if (even? n) (/ n 2) (+ (* 3 n) 1)) (inc length)))))
 
 (defn -main
-  "http://curry.ateneo.net/acm-icpc/v1/100.html"
   ([] (-main *in*))
   ([input-file]
     (with-open [reader (io/reader input-file)]
